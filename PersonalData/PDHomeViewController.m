@@ -206,7 +206,6 @@
     
     if(collectionViewSizeChanged) {
         collectionViewSizeChanged = false;
-        [self.collectionView performBatchUpdates:^{} completion:nil];
     }
 }
 @end
