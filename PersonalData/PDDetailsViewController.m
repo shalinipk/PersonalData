@@ -29,6 +29,7 @@
     self.navigationItem.title = [self.pdItem title];
     self.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
     self.spinner.hidesWhenStopped = YES;
+    self.spinner.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:self.spinner];
     
 
@@ -50,7 +51,6 @@
 }
 
 #pragma mark - <WKNavigationDelegate>
-
 
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation;
 {
