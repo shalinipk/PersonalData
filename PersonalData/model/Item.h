@@ -10,11 +10,11 @@
 #import <UIKit/UIKit.h>
 
 @interface Item : NSObject
-@property NSString* title;
-@property UIImage* image;
-@property  NSString* imageURL;
-@property NSString* pubDate;
-@property  NSString* summary;
-@property  NSString* link;
+@property (copy) NSString* title;
+@property (copy) UIImage* image;
+@property  (copy) NSString* imageURL;
+@property (copy) NSString* pubDate;
+@property  (copy) NSString* summary;
+@property  (copy) NSString* link;
 
 @end
